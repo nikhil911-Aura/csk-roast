@@ -5,11 +5,11 @@ import { SectionLabel } from "./RealityCheck";
 export default function CopiumFeed() {
   const list = [...COPIUM, ...COPIUM];
   return (
-    <section className="relative py-32 px-6">
+    <section className="relative py-20 sm:py-28 md:py-32 px-5 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <SectionLabel>05 — Live Fan Copium Feed</SectionLabel>
         <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
-          <h2 className="text-4xl font-black md:text-6xl">
+          <h2 className="text-3xl sm:text-4xl font-black md:text-6xl">
             <span className="text-gradient">Copium</span> in 4K
           </h2>
           <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-csk-yellow/80">
@@ -17,10 +17,10 @@ export default function CopiumFeed() {
           </div>
         </div>
 
-        <div className="mt-12 relative h-[420px] overflow-hidden glass rounded-3xl">
+        <div className="mt-10 relative h-[360px] sm:h-[420px] overflow-hidden glass rounded-3xl">
           <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-black to-transparent" />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-black to-transparent" />
-          <div className="animate-marquee px-8 py-6 space-y-4">
+          <div className="animate-marquee px-5 sm:px-8 py-6 space-y-4">
             {list.map((c, i) => (
               <div
                 key={i}

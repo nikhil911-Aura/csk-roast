@@ -12,12 +12,12 @@ const TIMELINE = [
 
 export default function TwoYearBan() {
   return (
-    <section className="relative py-32 px-6 overflow-hidden">
+    <section className="relative py-20 sm:py-28 md:py-32 px-5 sm:px-6 overflow-hidden">
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-red-500/5 blur-3xl pointer-events-none" />
       <div className="mx-auto max-w-5xl relative">
         <SectionLabel>06 — The Two-Year Timeout 🚫</SectionLabel>
         <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
-          <h2 className="text-4xl font-black md:text-6xl">
+          <h2 className="text-3xl sm:text-4xl font-black md:text-6xl">
             Suspended. <span className="text-gradient">For Two Years.</span>
           </h2>
           <div className="rounded-full border border-red-500/40 bg-red-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-red-400">
@@ -36,7 +36,7 @@ export default function TwoYearBan() {
           <Stat k="∞" v="copium since" />
         </div>
 
-        <div className="mt-12 glass rounded-3xl p-8 md:p-12">
+        <div className="mt-12 glass rounded-3xl p-6 sm:p-8 md:p-12">
           <div className="mb-8 text-xs uppercase tracking-[0.3em] text-csk-yellow/80">
             ⚠ Timeline of the Timeout
           </div>

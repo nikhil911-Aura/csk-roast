@@ -43,7 +43,7 @@ export default function Hero() {
           A Cinematic CSK Roast · Powered by Cope
         </div>
 
-        <h1 className="text-5xl font-black leading-[0.9] tracking-tight md:text-8xl">
+        <h1 className="text-[2.6rem] sm:text-6xl font-black leading-[0.9] tracking-tight md:text-8xl">
           <span className="block overflow-hidden">
             <span className="h-word inline-block">Five</span>{" "}
             <span className="h-word inline-block">Trophies.</span>
@@ -54,7 +54,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="h-sub mt-6 max-w-2xl text-balance text-lg text-white/70 md:text-2xl">
+        <p className="h-sub mt-6 max-w-2xl text-balance text-base text-white/70 sm:text-lg md:text-2xl px-2">
           Whistle Podu loud enough and maybe the playing XI will wake up. <br className="hidden md:block" />
           <span className="text-csk-yellow/80">Average squad age: yes.</span>
         </p>

@@ -52,31 +52,31 @@ export default function RoastReel() {
 
   return (
     <section ref={root} className="relative h-screen w-full overflow-hidden bg-black">
-      <div className="absolute top-10 left-6 md:left-12 z-20 text-xs uppercase tracking-[0.3em] text-csk-yellow/80">
+      <div className="absolute top-6 sm:top-10 left-5 md:left-12 z-20 text-[10px] sm:text-xs uppercase tracking-[0.3em] text-csk-yellow/80">
         07 — The Roast Reel · scroll →
       </div>
       <div
         ref={track}
-        className="absolute top-0 left-0 flex h-full items-center gap-12 pl-6 md:pl-12 will-change-transform"
+        className="absolute top-0 left-0 flex h-full items-center gap-6 sm:gap-12 pl-5 md:pl-12 will-change-transform"
       >
         {REEL.map((r, i) => (
           <div
             key={r.n}
-            className="reel-panel flex h-[68vh] w-[88vw] md:w-[60vw] shrink-0 flex-col justify-between rounded-3xl glass p-10 md:p-14 relative overflow-hidden"
+            className="reel-panel flex h-[72vh] w-[85vw] sm:w-[78vw] md:w-[60vw] shrink-0 flex-col justify-between rounded-3xl glass p-7 sm:p-10 md:p-14 relative overflow-hidden"
           >
             <div
-              className="reel-num text-[11rem] md:text-[14rem] font-black leading-none text-csk-yellow/10 absolute -top-8 -right-4 select-none"
+              className="reel-num text-[7rem] sm:text-[11rem] md:text-[14rem] font-black leading-none text-csk-yellow/10 absolute -top-4 sm:-top-8 -right-2 sm:-right-4 select-none"
             >
               {r.n}
             </div>
-            <div className="text-xs uppercase tracking-widest text-csk-yellow/70">
+            <div className="text-[10px] sm:text-xs uppercase tracking-widest text-csk-yellow/70">
               chapter {r.n}
             </div>
             <div className="relative">
-              <h3 className="reel-title text-5xl md:text-7xl font-black leading-[0.95]">
+              <h3 className="reel-title text-4xl sm:text-5xl md:text-7xl font-black leading-[0.95]">
                 {r.title}
               </h3>
-              <p className="reel-body mt-6 max-w-md text-lg text-white/65">{r.body}</p>
+              <p className="reel-body mt-4 sm:mt-6 max-w-md text-base sm:text-lg text-white/65">{r.body}</p>
             </div>
             <div className="text-[10px] uppercase tracking-widest text-white/30">
               csk · roast.exe · panel {i + 1} / {REEL.length}

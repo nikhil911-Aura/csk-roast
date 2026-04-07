@@ -10,11 +10,26 @@ html,
 body {
   background: #050505;
   color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* Prevent text from being too large on small phones */
+@media (max-width: 380px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 @layer utilities {

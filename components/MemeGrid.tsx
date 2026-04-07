@@ -8,17 +8,17 @@ import { clickPop, sadTrombone } from "@/lib/sound";
 
 export default function MemeGrid() {
   return (
-    <section className="relative py-32 px-6">
+    <section className="relative py-20 sm:py-28 md:py-32 px-5 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <SectionLabel>04 — The Meme Vault</SectionLabel>
-        <h2 className="mt-4 text-4xl font-black md:text-6xl">
+        <h2 className="mt-4 text-3xl sm:text-4xl font-black md:text-6xl">
           Premium <span className="text-gradient">Roast Cards</span>
         </h2>
         <p className="mt-4 max-w-xl text-white/60">
           Inspired by real headlines from IPL 2025. Click any card. Regret follows.
         </p>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {MEMES.map((m, i) => (
             <TiltCard key={m.title} index={i} {...m} />
           ))}

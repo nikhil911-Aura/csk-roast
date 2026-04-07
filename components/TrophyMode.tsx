@@ -13,7 +13,7 @@ export default function TrophyMode() {
   const [on, setOn] = useState(false);
 
   return (
-    <section id="trophy" className="relative py-32 px-6">
+    <section id="trophy" className="relative py-20 sm:py-28 md:py-32 px-5 sm:px-6">
       <AnimatePresence>
         {on && (
           <motion.div
@@ -27,7 +27,7 @@ export default function TrophyMode() {
 
       <div className="mx-auto max-w-6xl">
         <SectionLabel>03 — Trophy Memory Mode</SectionLabel>
-        <h2 className="mt-4 text-4xl font-black md:text-6xl">
+        <h2 className="mt-4 text-3xl sm:text-4xl font-black md:text-6xl">
           Living in <span className="text-gradient">Past Tense</span>
         </h2>
         <p className="mt-4 max-w-xl text-white/60">
@@ -35,14 +35,14 @@ export default function TrophyMode() {
         </p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="relative h-[360px] overflow-hidden glass rounded-3xl">
+          <div className="relative h-[280px] sm:h-[360px] overflow-hidden glass rounded-3xl">
             <TrophyScene />
             <div className="absolute bottom-4 left-4 text-[10px] uppercase tracking-widest text-csk-yellow/70">
               real-time 3D · still polishing it from 2021
             </div>
           </div>
 
-          <div className="glass rounded-3xl p-10 flex flex-col justify-center">
+          <div className="glass rounded-3xl p-6 sm:p-10 flex flex-col justify-center">
             <RoastButton
               onClick={() => {
                 setOn((s) => {

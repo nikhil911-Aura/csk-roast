@@ -6,11 +6,11 @@ import { SectionLabel } from "./RealityCheck";
 
 export default function AgeAnalytics() {
   return (
-    <section className="relative py-32 px-6">
+    <section className="relative py-20 sm:py-28 md:py-32 px-5 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <SectionLabel>02 — Age Analytics™</SectionLabel>
         <div className="mt-4 flex flex-wrap items-end justify-between gap-6">
-          <h2 className="text-4xl font-black md:text-6xl">
+          <h2 className="text-3xl sm:text-4xl font-black md:text-6xl">
             Squad Age vs <span className="text-gradient">Reaction Time</span>
           </h2>
           <p className="max-w-sm text-sm text-white/50">
@@ -18,7 +18,7 @@ export default function AgeAnalytics() {
           </p>
         </div>
 
-        <div className="mt-14 glass rounded-3xl p-8 md:p-12">
+        <div className="mt-12 glass rounded-3xl p-6 sm:p-8 md:p-12">
           <div className="space-y-7">
             {AGE_DATA.map((row, i) => (
               <Row key={row.label} {...row} delay={i * 0.07} />
